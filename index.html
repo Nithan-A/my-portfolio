@@ -10,13 +10,16 @@
     
     <link rel="stylesheet" href="Portfolio_Website(CSS).css">
 </head>
+
 <body>
+    <canvas id="particle-canvas"></canvas>
     <header>
         <a href="#home" class="logo">Nithan Aravinth</a>
         <nav>
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
@@ -47,7 +50,7 @@
                 <div class="about-text">
                     <p>I am a Digital Media Game Arts student at York University with a "digital-to-physical" mindset. My work spans complex game mechanics, 3D asset fabrication, and full-stack web development, allowing me to bridge the gap between artistic animation principles and the engineering precision required for physical manufacturing.</p>
                     
-                    <p>I have developed a rigorous command of the 3D pipeline and game engine implementation. Whether I am rigging and animating characters in Maya, utilizing Rhino 8 for exact NURBS modeling, or building complex vehicle physics and atmospheric level designs in Unreal Engine 5, I am equipped to adapt to any stage of a production workflow.</p>
+                    <p>I have developed a rigorous command of the 3D pipeline and game engine implementation. Whether I am rigging and animating characters in Maya, utilizing Rhino 8 for exact NURBS modeling, or building complex vehicle physics in Unreal Engine 5, I am equipped to adapt to any stage of a production workflow.</p>
 
                     <p>Complementing my technical skillset is a strong foundation in operational leadership. Having managed daily operations, safety compliance, and scheduling for a team of over 100 staff members as a Rides Department Supervisor, I bring the discipline and organization needed to be a highly reliable collaborator on complex technical projects.</p>
                 </div>
@@ -91,6 +94,7 @@
                         <div class="project-tags">
                             <span>Game Design</span>
                             <span>Level Design</span>
+                            <span>Team Collaboration</span>
                         </div>
                         <a href="https://bilbilly.itch.io/crops-and-robbers" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Details</a>
                     </div>
@@ -121,8 +125,24 @@
                         <div class="project-tags">
                             <span>Unreal Engine 5</span>
                             <span>Level Design</span>
+                            <span>Team Collaboration</span>
                         </div>
                         <a href="https://crocostar27.itch.io/horror-hugger" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Details</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="Cyberscape.png" alt="Cyberscape 2D Runner Game">
+                    </div>
+                    <div class="project-info">
+                        <h4>Cyberscape</h4>
+                        <p>A cyberpunk-themed 2D runner developed in Unity. Taught myself C# and the Unity engine from to build this game, implementing dynamic spawning obstacles and a risk-reward ability system.</p>
+                        <div class="project-tags">
+                            <span>Unity / C#</span>
+                            <span>2D Game Development</span>                            
+                        </div>
+                        <a href="https://nithan-a.itch.io/cybersacpe" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Details</a>
                     </div>
                 </div>
             </div>
@@ -262,10 +282,42 @@
             </div>
         </div>
 
-        </div>
-            <div class="project-category">
-            <h3 class="category-title">Web Development</h3>
+        <div class="project-category">
+            <h3 class="category-title">Software & App Development</h3>
             <div class="project-grid">
+
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="LLA.png" alt="Hiragana Language Learning App">
+                    </div>
+                    <div class="project-info">
+                        <h4>Hiragana Language Learning App</h4>
+                        <p>Collaborated within a four-person academic team to develop a custom Android app investigating how UI timer emphasis affects user stress and retention. Co-authored the resulting HCI research study, analyzing performance metrics and cognitive load during Japanese character acquisition.</p>                        
+                        <div class="project-tags">
+                            <span>Android Studio</span>
+                            <span>HCI Research</span>
+                            <span>UX/UI Design</span>
+                            <span>Team Collaboration</span>
+                        </div>
+                        <a href="https://github.com/maureen-n-n/EECS4443GroupProject" target="_blank" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Details</a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="ProfileApp.png" alt="Android Diary App">
+                    </div>
+                    <div class="project-info">
+                        <h4>Profile & Diary Android App</h4>
+                        <p>A full-featured native Android application built in Java. Features secure user authentication, SQLite database storage for profiles, and a dynamic diary system utilizing Intent-based navigation and custom ListViews.</p>
+                        <div class="project-tags">
+                            <span>Java</span>
+                            <span>Android Studio</span>
+                            <span>SQLite</span>
+                        </div>
+                        <a href="https://github.com/Nithan-A/Profile-Management-App" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Details</a>
+                    </div>
+                </div>
 
                 <div class="project-card">
                     <div class="project-img">
@@ -277,11 +329,132 @@
                         <div class="project-tags">
                             <span>Node.js / JSON</span>
                             <span>HTML / CSS / JS</span>
+                            <span>Team Collaboration</span>
                         </div>
                         <a href="https://github.com/Nithan-A/Guess-Master" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Details</a>
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div class="project-category">
+            <h3 class="category-title">Technical Art & Generative Media</h3>
+            <div class="project-grid">
+
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="Immersive Multi-Projector Installation.png" alt="Three Projector Render Setup">
+                    </div>
+                    <div class="project-info">
+                        <h4>Immersive Multi-Projector Installation</h4>
+                        <p>An immersive, audio-reactive 3D installation built in Max/MSP and Jitter. Engineered a custom projection mapping system to render and seamlessly split dynamic 3D environments across a three-projector physical array, while coordinating spatial hardware routing for lighting and audio.</p>
+                        <div class="project-tags">
+                            <span>Max/MSP</span>
+                            <span>Projection Mapping</span>                            
+                            <span>Immersive Tech</span>
+                        </div>
+                        <a href="https://github.com/Nithan-A/Immersive-Multi-Projector-Installation" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Details</a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="Mise en Scène.png" alt="Max MSP Audio Reactive 3D Scene">
+                    </div>
+                    <div class="project-info">
+                        <h4>Mise en Scène: Audio-Reactive 3D</h4>
+                        <p>A real-time, interactive 3D environment built entirely in Max/MSP/Jitter. Features a node-based architecture managing custom 3D Blender models, animated camera matrices, and dynamic visual transformations driven by real-time audio amplitude mapping.</p>
+                        <div class="project-tags">
+                            <span>Max/MSP</span>
+                            <span>Jitter</span>
+                            <span>Audio-Reactive</span>
+                        </div>
+                        <a href="https://github.com/Nithan-A/Mise-en-Sc-ne-Audio-Reactive-3D" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Details</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="Generative Audio-Visualizer.png" alt="Generative Audio Visualizer Max MSP">
+                    </div>
+                    <div class="project-info">
+                        <h4>Generative Audio-Visualizer</h4>
+                        <p>A multi-stage generative visualizer built in Max/MSP. Utilizes custom filter banks and amplitude analysis to dissect an audio track in real-time, mapping frequency data to algorithmic 2D drawings, creating complex, time-sequenced geometric animations.</p>
+                        <div class="project-tags">
+                            <span>Max/MSP</span>
+                            <span>Signal Processing</span>
+                            <span>Generative Art</span>
+                        </div>
+                        <a href="https://github.com/Nithan-A/Generative-Audio-Visualizer" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Details</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <h2 class="section-title">Technical <span>Skills</span></h2>
+        
+        <div class="skills-grid">
+            
+            <div class="skill-category">
+                <h3><i class="fa-solid fa-code"></i> Languages & Web</h3>
+                <div class="skill-tags">
+                    <span>C#</span>
+                    <span>Java</span>
+                    <span>JavaScript</span>
+                    <span>HTML / CSS</span>
+                    <span>GLSL / Shaders</span>
+                    <span>Node.js</span>
+                    <span>JSON</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3><i class="fa-solid fa-gamepad"></i> Game Engines & XR</h3>
+                <div class="skill-tags">
+                    <span>Unreal Engine 5</span>
+                    <span>UE5 Blueprints</span>
+                    <span>Unity</span>                    
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3><i class="fa-solid fa-cube"></i> 3D Modeling & Art</h3>
+                <div class="skill-tags">
+                    <span>Autodesk Maya</span>
+                    <span>Rhino 8</span>
+                    <span>Blender</span>
+                    <span>NURBS Modeling</span>
+                    <span>HumanIK Rigging</span>
+                    <span>Digital Fabrication</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3><i class="fa-solid fa-sliders"></i> Technical Art & Media</h3>
+                <div class="skill-tags">
+                    <span>Max/MSP</span>
+                    <span>Jitter</span>
+                    <span>Projection Mapping</span>
+                    <span>Photoshop</span>
+                    <span>Premiere Pro</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3><i class="fa-solid fa-wrench"></i> Developer Tools</h3>
+                <div class="skill-tags">
+                    <span>Git / GitHub</span>
+                    <span>Android Studio</span>
+                    <span>SQLite</span>
+                    <span>JUnit</span>
+                    <span>Eclipse</span>
+                </div>
+            </div>
+
+        </div>
     </section>
 
     <section id="contact" class="contact">
@@ -297,10 +470,11 @@
                     <span>Toronto, ON</span>
                 </div>
                 
-                <div class="social-icons contact-socials">
-                    <a href="https://nithan-a.itch.io/" target="_blank" aria-label="itch.io"><i class="fa-brands fa-itch-io"></i></a>
+                <div class="social-icons contact-socials">                    
                     <a href="https://www.linkedin.com/in/nithan-aravinth/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="https://www.instagram.com/nithan_photography_/?hl=en" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/Nithan-A" target="_blank" aria-label="github"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://nithan-a.itch.io/" target="_blank" aria-label="itch.io"><i class="fa-brands fa-itch-io"></i></a>
+                    <a href="https://www.instagram.com/nithan_photography_/?hl=en" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>                    
                 </div>
             </div>
 
