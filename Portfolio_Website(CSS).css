@@ -593,6 +593,8 @@ nav a:hover {
     border-top: 1px solid #111;
 }
 
+
+
 /* =========================================
    7. RESPONSIVE DESIGN (Mobile Phones & Tablets)
    ========================================= */
@@ -670,28 +672,31 @@ nav a:hover {
     width: 100vw;
     height: 100vh;
     background: rgba(0, 0, 0, 0.85);
-    backdrop-filter: blur(8px); /* Frosted glass effect */
+    backdrop-filter: blur(8px); 
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 2000; /* Stays on top of everything */
+    z-index: 2000; 
+    
+    /* THE NUCLEAR FIX */
     opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.3s ease;
+    visibility: hidden; 
+    transition: opacity 0.3s ease, visibility 0s linear 0.3s;
 }
 
-/* When the .active class is added via JS, it fades in */
+/* When the JS adds the 'active' class to open the modal... */
 .modal-overlay.active {
     opacity: 1;
-    pointer-events: all;
+    visibility: visible;
+    transition: opacity 0.3s ease, visibility 0s linear; 
 }
 
 .modal-content {
     background: #111;
-    padding: 25px;
+    padding: 10px;
     border-radius: 12px;
     width: 90%;
-    max-width: 900px;
+    max-width: 1000px;
     border: 1px solid #333;
     position: relative;
     transform: translateY(30px);
@@ -704,13 +709,13 @@ nav a:hover {
 
 .modal-content h3 {
     color: var(--text-main);
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     font-size: 24px;
 }
 
 .close-modal {
     position: absolute;
-    top: 20px;
+    top: 10px;
     right: 25px;
     font-size: 24px;
     color: var(--text-muted);
@@ -731,4 +736,9 @@ model-viewer {
     border-radius: 8px;
     border: 1px solid #222;
     outline: none;
+}
+
+.btn, .project-card, .project-link {
+    position: relative;
+    z-index: 10;
 }
