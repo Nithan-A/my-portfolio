@@ -174,6 +174,51 @@ window.addEventListener('resize', function() {
     init();
 });
 
+// ==========================================
+// 3D MODEL MODAL LOGIC
+// ==========================================
+const modal = document.getElementById('model-modal');
+const closeModalBtn = document.querySelector('.close-modal');
+const modelViewer = document.getElementById('active-model');
+const modelTitle = document.getElementById('modal-title');
+
+// Find every button with the class 'model-btn'
+const modelButtons = document.querySelectorAll('.model-btn');
+
+modelButtons.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+        e.preventDefault(); // Stops the page from jumping to the top
+
+        // Grab the data attached to the button
+        const modelSrc = btn.getAttribute('data-model');
+        const title = btn.getAttribute('data-title');
+        
+        // Update the modal with the specific model's info
+        modelViewer.src = modelSrc;
+        modelTitle.textContent = title;
+        
+        // Show the modal
+        modal.classList.add('active');
+    });
+});
+
+// Function to close the modal
+const closeModal = () => {
+    modal.classList.remove('active');
+    // Clear the model source after fade-out to save browser memory
+    setTimeout(() => { modelViewer.src = ""; }, 300);
+};
+
+// Close when clicking the 'X'
+closeModalBtn.addEventListener('click', closeModal);
+
+// Close when clicking the dark background outside the box
+modal.addEventListener('click', (e) => {
+    if(e.target === modal) {
+        closeModal();
+    }
+});
+
 // Start the system
 init();
 animate();
